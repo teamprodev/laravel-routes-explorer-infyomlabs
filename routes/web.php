@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,12 @@ Route::get('/', function () {
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+
+
+Route::resource('posts', App\Http\Controllers\PostController::class);
+Route::resource('customers', App\Http\Controllers\CustomerController::class);
