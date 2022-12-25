@@ -16,7 +16,8 @@
         "infyomlabs/laravel-ui-adminlte": "^5.1",
         "laravel/framework": "^9.0",
         "laravel/tinker": "^2.0",
-        "tcg/voyager": "^1.5"
+        "tcg/voyager": "^1.5",
+        "infyomlabs/routes-explorer": "^1.0"
     },
     "require-dev": {
         "spatie/laravel-ignition": "^1.0",
